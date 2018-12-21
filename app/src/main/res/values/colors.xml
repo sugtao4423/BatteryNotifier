@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="success">#28A745</color>
+    <color name="success_alpha">#6E28A745</color>
+    <color name="danger">#DC3545</color>
+    <color name="danger_alpha">#6EDC3545</color>
+</resources>

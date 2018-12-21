@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">BatteryNotifier</string>
+    <string name="service_running">Running BatteryNotifier</string>
+    <string name="service_not_running">Do Not Running BatteryNotifier</string>
+    <string name="rule">Rule</string>
+    <string name="tab_text_notify">Notify</string>
+    <string name="tab_text_account">Account</string>
+
+    <string name="add_account">Add Account</string>
+    <string-array name="kindSelect">
+        <item>Slack</item>
+        <item>Twitter</item>
+    </string-array>
+    <string name="add_notify">Add Notify</string>
+
+    <string name="slack_token">token</string>
+    <string name="slack_channel">channel</string>
+    <string name="slack_emoji">emoji</string>
+    <string name="slack_icon">icon</string>
+    <string name="slack_icon_hint">URL or emoji</string>
+    <string name="slack_username">username</string>
+
+    <string name="twitter_screen_name">screen name</string>
+    <string name="twitter_consumer_key">consumer key</string>
+    <string name="twitter_consumer_secret">consumer secret</string>
+    <string name="twitter_access_token">access token</string>
+    <string name="twitter_access_token_secret">access token secret</string>
+
+    <string name="fill_all_input_box">Fill all input box</string>
+
+    <string name="post_account">Post Account</string>
+    <string name="post_threshold">Threshold</string>
+    <string name="percent">%</string>
+    <string name="post_text">Post Text</string>
+
+    <string name="error_convert_json">Error: Convert to JSON</string>
+    <string name="error_parse_json">Error: Parse JSON</string>
+    <string name="error_no_accounts">Error: No Account.\nFirst, register account.</string>
+    <string name="error_sql_fail_add">SQL Error: Failed add.</string>
+</resources>

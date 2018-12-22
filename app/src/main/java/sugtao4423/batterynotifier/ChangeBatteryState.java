@@ -35,6 +35,13 @@ public class ChangeBatteryState{
         int scale = broadcastIntent.getIntExtra(BatteryManager.EXTRA_SCALE, -1);
         int batteryPercent = (int)(level / (float)scale * 100);
 
+        App app = (App)context.getApplicationContext();
+        if(app.getPreviousBatteryPercent() == batteryPercent){
+            return;
+        }else{
+            app.setPreviousBatteryPercent(batteryPercent);
+        }
+
         ArrayList<Notify> notify;
         try{
             notify = ((App)context.getApplicationContext()).getDbUtils().getEnabledNotifies();

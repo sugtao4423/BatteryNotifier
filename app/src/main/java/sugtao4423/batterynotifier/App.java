@@ -7,6 +7,7 @@ import sugtao4423.batterynotifier.db.DBUtils;
 public class App extends Application{
 
     private DBUtils dbUtils;
+    private int previousBatteryPercent;
 
     public DBUtils getDbUtils(){
         if(dbUtils == null){
@@ -20,6 +21,14 @@ public class App extends Application{
             dbUtils.dbClose();
             dbUtils = null;
         }
+    }
+
+    public void setPreviousBatteryPercent(int previousBatteryPercent){
+        this.previousBatteryPercent = previousBatteryPercent;
+    }
+
+    public int getPreviousBatteryPercent(){
+        return previousBatteryPercent;
     }
 
 }

@@ -78,13 +78,4 @@ public class BatteryWatchService extends Service{
         }
     }
 
-    private class ChangeBatteryStateReceiver extends BroadcastReceiver{
-
-        @Override
-        public void onReceive(Context context, Intent intent){
-            new ChangeBatteryState(context, intent);
-        }
-
-    }
-
 }

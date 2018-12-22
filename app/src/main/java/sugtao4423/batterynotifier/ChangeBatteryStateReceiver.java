@@ -1,5 +1,6 @@
 package sugtao4423.batterynotifier;
 
+import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
@@ -28,11 +29,12 @@ import twitter4j.auth.AccessToken;
 import twitter4j.conf.Configuration;
 import twitter4j.conf.ConfigurationBuilder;
 
-public class ChangeBatteryState{
+public class ChangeBatteryStateReceiver extends BroadcastReceiver{
 
-    public ChangeBatteryState(Context context, Intent broadcastIntent){
-        int level = broadcastIntent.getIntExtra(BatteryManager.EXTRA_LEVEL, -1);
-        int scale = broadcastIntent.getIntExtra(BatteryManager.EXTRA_SCALE, -1);
+    @Override
+    public void onReceive(Context context, Intent intent){
+        int level = intent.getIntExtra(BatteryManager.EXTRA_LEVEL, -1);
+        int scale = intent.getIntExtra(BatteryManager.EXTRA_SCALE, -1);
         int batteryPercent = (int)(level / (float)scale * 100);
 
         App app = (App)context.getApplicationContext();
